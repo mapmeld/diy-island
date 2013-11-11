@@ -1,7 +1,7 @@
-# Imaginary Island
+# DIY Island
 
-Step-by-step guide to an interactive map (similar to Google Maps!) for your own imaginary
-territory.
+Step-by-step guide to an interactive map (similar to Google Maps!) for your very own
+remote island!
 
 ## Software
 * Python
@@ -25,16 +25,16 @@ Going back to the Florida Keys map, let's say that you are only adding one or tw
 map. In QGIS, you can use "Select Features by Freehand" to draw around the shapes which
 you want.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/select_in_qgis.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/select_in_qgis.png"/>
 
 Then use "Layer > Save Selection as Vector File..." to save the highlighted areas.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/save_selection_qgis.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/save_selection_qgis.png"/>
 
 In the Save dialog, select GeoJSON format, and use Browse to select what to name the
 saved file.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/save_geojson_qgis.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/save_geojson_qgis.png"/>
 
 ### Edit Coastline
 In QGIS, use Layer > Toggle Editing to make each point moveable. This option only
@@ -68,17 +68,17 @@ Open TileMill and create a new project. Do not include the world map data.
 * Select your final map file (shapefile or GeoJSON format) and then Save & Style
 * Center your map on your data. For small areas, it may be difficult to find at first. Change style.mss for your layer to have line-width:50; and click Save or Ctrl+S. A blob should appear.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/blot_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/blot_tilemill.png"/>
 
 * Click the wrench in the top right of TileMill to set your project boundaries. Continue zooming to the center of the blob until you can see a defined shape.
 * Click shift and drag the mouse to frame the area. Click inside the box to set the project center. Credit OpenStreetMap in the attribution. Move the minimum and maximum zoom bars (a zoom level number is visible in the top left of your map). Click Save.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/project_settings_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/project_settings_tilemill.png"/>
 
 * If your project is made of several LineStrings, the coastline may not form a consistent shape. Run linemeet.py in this repo to make a polygon out of the lines.
         python linemeet.py
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/jagged_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/jagged_tilemill.png"/>
 
 * Quit and re-open TileMill to see your changes.
 
@@ -105,7 +105,7 @@ building-fill:#ae8;
 building-height: -0.005;
 ```
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/carto_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/carto_tilemill.png"/>
 
 Depending on the scale and shape of the islands, you might want a positive, negative, much higher, or much lower value for building-height.
 
@@ -135,7 +135,7 @@ Map {
 
 If you are using building-height, that part will remain untextured by polygon-pattern-file.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/texture_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/texture_tilemill.png"/>
 
 
 ## Add Labels
@@ -168,7 +168,7 @@ Add the GeoJSON file to TileMill, and use a marker-labeling code such as
 }
 ```
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/label_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/label_tilemill.png"/>
 
 You can use any font on your computer in TileMill, and it will create tiles which others can see,
 even if they don't have the same font installed.
@@ -195,7 +195,7 @@ range of Unicode characters.
 
     python rarelang.py labels.geojson --field sample --range "0x0400-0x04AA"
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/cycle_letters_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/cycle_letters_tilemill.png"/>
 
 If you don't like your random letters, re-run the script, click the eye in the layers tool
 to hide the labels, save, click the eye again to reload the labels, save, and your new
@@ -205,13 +205,13 @@ combination will appear.
 
 Create an account on <a href="http://mapbox.com">MapBox.com</a>, and verify your e-mail.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/export_tilemill.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/export_tilemill.png"/>
 
 Back in TileMill, click the Export menu in the top right. Select Upload. You will be
 given a change to update your project boundaries and upload size. Review the options, then
 click Upload.
 
-<img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/upload_to_mapbox.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/master/screenshots/upload_to_mapbox.png"/>
 
 If you experience issues, go to the Export menu again and click View exports to try again,
 or export MBTiles and upload the tiles using MapBox tools.
@@ -219,7 +219,7 @@ or export MBTiles and upload the tiles using MapBox tools.
 ## Add Markers
 
 MapBox has updated their map editor a bit so you can add plenty of markers in a user-friendly
-way. Don't add any background maps, because they won't match up with your imaginary map.
+way. Don't use any background, because it won't match up with your fictional maps.
 
 ## Share Your Map
 
