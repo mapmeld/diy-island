@@ -113,10 +113,11 @@ Change the colors to fit the tone of your island. Bright and shiny? Mysterious?
 
 ### Add more layers
 If you downloaded shapefiles from Cloudmade, you'll find several other layers. Natural features
-like rivers and lakes are good. If your island is further along, you can include the highways
-(roads) layer. Apply the same rotate / flip operation and style them differently.
+like rivers and lakes are good. If your island has infrastructure, you can include the
+highways (roads) layer. Apply the same rotate / flip operation and style them differently.
 
-Use the layers menu to change the stacking order (so roads display over rivers, for example).
+Click and drag layers inside of the layers menu to change the stacking order (so roads
+display over rivers, for example).
 
 ### Use Textures
 The water and land could use some textures! Go to the Documents/MapBox/projects folder and
@@ -213,7 +214,7 @@ click Upload.
 <img src="https://raw.github.com/mapmeld/imaginary-island/master/screenshots/upload_to_mapbox.png"/>
 
 If you experience issues, go to the Export menu again and click View exports to try again,
-or export MBTiles and upload the tiles yourself.
+or export MBTiles and upload the tiles using MapBox tools.
 
 ## Add Markers
 
