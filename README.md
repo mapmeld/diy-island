@@ -219,8 +219,19 @@ or export MBTiles and upload the tiles using MapBox tools.
 ## Add Markers
 
 MapBox has updated their map editor a bit so you can add plenty of markers in a user-friendly
-way. Don't use any background, because it won't match up with your fictional maps.
+way. Don't use any Baselayer, because it won't match up with your fictional maps!
+
+<img src="https://raw.github.com/mapmeld/diy-island/gh-pages/screenshots/mapbox_label.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/gh-pages/screenshots/mapbox_color.png"/>
+
+Click "Untitled map" to change that to something awesome:
+
+<img src="https://raw.github.com/mapmeld/diy-island/gh-pages/screenshots/mapbox_click_untitled.png"/>
+<img src="https://raw.github.com/mapmeld/diy-island/gh-pages/screenshots/mapbox_description.png"/>
+
 
 ## Share Your Map
 
-Click Share and you'll find a link that you can send out into the world. Congratulations!
+<img src="https://raw.github.com/mapmeld/diy-island/gh-pages/screenshots/mapbox_share.png"/>
+
+Click Share and you'll find a link that you can send out into an unsuspecting world. Congratulations!
