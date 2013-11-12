@@ -1,6 +1,6 @@
 # DIY Island
 
-Step-by-step guide to an interactive map (similar to Google Maps!) for your very own
+Step-by-step guide to an interactive map for your very own
 remote island!
 
 ## Software
